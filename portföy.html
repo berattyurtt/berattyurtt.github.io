@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berat Yurt | Frontend Developer</title>
+    <meta name="description" content="Berat Yurt'un kişisel web sayfası. Frontend Developer olarak projelerim ve iletişim bilgilerim.">
+    <meta name="keywords" content="Berat Yurt, Frontend Developer, Web Geliştirici, Kişisel Web Sayfası">
+    <meta name="author" content="Berat Yurt">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--Özel CSS-->
+    <style>
+        body {
+            background-color: #212529;
+            color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .navbar-brand {
+            font-family: 'Space Mono', monospace;
+        }
+
+        /*Navbar link ve hover efekti*/
+        .navbar .nav-link:hover {
+            color: #f8f9fa !important;
+            transition: color 0.3s ease;
+        }
+
+        /*Hero alanı*/
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /*Hakkımda bölümü*/
+        #hakkimda {
+            padding: 60px 0;
+        }
+
+        /*Kurslar ve Sertifikalar bölümü*/
+        #kurslar-sertifikalar {
+            padding: 60px 0;
+        }
+
+        /*Kursalar ve Sertifikalar sekmeleri*/
+        .nav-tabs .nav-link {
+            color: #adb5bd;
+        }
+
+        /*Beceriler*/
+        #beceriler {
+            padding: 60px 0;
+        }
+
+        #beceriler ul li {
+            padding: 5px 0;
+            color: #f8f9fa;
+        }
+
+        /*Kart Resimleri*/
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /*Footer*/
+        footer {
+            background-color: #1a1e21;
+            color: #adb5bd;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+        <!--Navbar Başlangıç-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Developed by &lt;/Berat&gt;</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Home Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hakkimda">About me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projeler">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kurslar-sertifikalar">Courses and Certificates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#beceriler">Skills</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar Bitiş-->
+
+        <!--Hero Alanı Başlangıç-->
+        <section class="hero">
+            <h1 class="display-4">Hello, I am Berat Yurt.</h1>
+            <p class="lead">As a Frontend Developer, I develop modern and creative web projects.</p>
+            <div class="contact-info d-flex justify-content-center gap-4 mt-2">
+                <a href="https://www.linkedin.com/in/berattyurtt/" target="_blank" class="text-decoration-none text-light">
+                    <i class="bi bi-linkedin"></i> berattyurtt
+                </a>
+                <a href="https://github.com/berattyurtt" target="_blank" class="text-decoration-none text-light">
+                    <i class="bi bi-github"></i> berattyurtt
+                </a>
+                <a href="mailto:yurtberat01@gmail.com" target="_blank" class="text-decoration-none text-light">
+                    <i class="bi bi-envelope-fill"></i> Send me an email
+                </a>
+            </div>
+        </section>
+        <!--Hero Alanı Bitiş-->
+
+        <!--Hakkımda Bölümü Başlangıç-->
+        <section id="hakkimda" class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4"><i class="bi bi-person-vcard-fill me-2"></i>About me</h2>
+                    <p>Hello! I'm <strong>Berat Yurt</strong>. I am a Frontend Developer with a strong passion for building web interfaces. I develop modern, accessible and responsive web projects using HTML, CSS, JavaScript, and Bootstrap 5.</p>
+                    <p>My goal is to build long-lasting projects that offer excellent user experiences and visually appealing interfaces. I am always eager to learn new technologies and grow as a developer.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/portföy_resmi.jpeg" alt="Berat Yurt" class="img-fluid mb-4" style="max-width: 300px;">
+                </div>
+            </div>
+        </section>
+        <!--Hakkımda Bölümü Bitiş-->
+
+        <!-- Eğitim Bölümü Başlangıç -->
+        <section id="egitim" class="container mb-5">
+            <h2 class="mb-4 text-center"><i class="bi bi-mortarboard-fill me-2"></i>Education</h2>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h5>2024 - Currently</h5>
+                    <p>Anadolu Üniversitesi - Computer Programming</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>2020 - 2023</h5>
+                    <p>Çukurova Üniversitesi - Oral and Dental Health</p>
+                </div>
+            </div>
+        </section>
+        <!--Eğitim Bölümü Bitiş-->
+
+        <!-- Projeler Bölümü Başlangıç -->
+         <section id="projeler" class="container py-5">
+            <h2 class="mb-4"><i class="bi bi-file-earmark-code-fill me-2"></i>Projects</h2>
+            <div class="row g-4">
+
+                <!--Proje Kartı 1-->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light border-0 shadow">
+                        <img src="images/kisisel_web_sayfasi_sablonu.jpeg" class="card-img-top" alt="Proje 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Web Page Template</h5>
+                            <p class="card-text">I created a personal website using HTML5 and CSS3.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="https://github.com/berattyurtt/Kisisel-Web-Sitesi" class="btn btn-light btn-sm" target="_blank">See the Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Proje Kartı 1 Bitiş-->
+                <!--Proje Kartı 2-->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light border-0 shadow">
+                        <img src="images/contact_form.jpeg" class="card-img-top" alt="Proje 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact Form</h5>
+                            <p class="card-text">A contact form that I created using HTML5, CSS and JavaScript.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="https://github.com/berattyurtt/HTML5-CSS-and-JavaScript-ContactForm-Project" class="btn btn-light btn-sm" target="_blank">See the Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Proje Kartı 2 Bitiş-->
+                <!--Proje Kartı 3-->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light border-0 shadow">
+                        <img src="images/bootstrap_baslangic.jpeg" class="card-img-top" alt="Proje 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap 5 Projects</h5>
+                            <p class="card-text">My Bootstrap 5 projects with notes</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="https://github.com/berattyurtt/Bootstrap-5-Proje" class="btn btn-light btn-sm" target="_blank">See the Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Proje Kartı 3 Bitiş-->
+                <!--Proje Kartı 4-->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light border-0 shadow">
+                        <img src="images/google_clone.jpeg" class="card-img-top" alt="Proje 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Clone</h5>
+                            <p class="card-text">A Google Clone project I prepared using HTML5 and CSS3 as part of the Kodluyoruz training.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="https://github.com/berattyurtt/Google-Clone" class="btn btn-light btn-sm" target="_blank">See the Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Proje Kartı 4 Bitiş-->
+                <!--Proje Kartı 5-->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light border-0 shadow">
+                        <img src="images/external_css_file_project.jpeg" class="card-img-top" alt="Proje 5">
+                        <div class="card-body">
+                            <h5 class="card-title">External CSS file Project</h5>
+                            <p class="card-text">I define the style of all HTML tags in a single CSS file and connect it to the HTML with the link tag and notes.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="https://github.com/berattyurtt/External-CSS-file-Project" class="btn btn-light btn-sm" target="_blank">See the Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Proje Kartı 5 Bitiş-->
+                <!--Proje Kartı 6-->
+                <div class="col-md-4">
+                    <div class="card h-100 bg-dark text-light border-0 shadow">
+                        <img src="images/geolocation.jpeg" class="card-img-top" alt="Proje 6">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML5 Geolocation</h5>
+                            <p class="card-text">I was able to mark my own location on Google Maps on the web page I created with JavaScript in HTML5</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="https://github.com/berattyurtt/HTML5-Geolocation" class="btn btn-light btn-sm" target="_blank">See the Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Proje Kartı 6 Bitiş-->
+            </div>
+         </section>
+
+        <!-- Kurslar & Sertifikalar Bölümü Başlangıç -->
+        <section id="kurslar-sertifikalar" class="container">
+            <h2 class="mb-4"><i class="bi bi-patch-check-fill me-2"></i>Courses and Certificates</h2>
+
+            <!-- Sekme Butonları -->
+            <ul class="nav nav-tabs mb-3" id="eduTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="courses-tab" data-bs-toggle="tab" data-bs-target="#courses"
+                            type="button" role="tab">
+                        Courses & Bootcamps
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="certificates-tab" data-bs-toggle="tab" data-bs-target="#certificates"
+                            type="button" role="tab">
+                        Certificates
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Sekme İçeriği -->
+            <div class="tab-content" id="eduTabsContent">
+                
+                <!-- Kurslar ve Bootcampler -->
+                <div class="tab-pane fade show active" id="courses" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Kart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Programming · 101:HTML</h5>
+                                    <p class="card-subtitle mt-3">Turkcell Geleceği Yazanlar · November - December 2024</p>
+                                    <p class="mt-3">In the beginner level courses, I learned HTML, the basis of Web programming.</p>
+                                    <p class="mt-3"><strong>Skills:</strong> HTML </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Programming · 201:HTML5 & CSS</h5>
+                                    <p class="card-subtitle mb-2">Turkcell Geleceği Yazanlar · February - March 2025</p>
+                                    <p class="mt-3">In the intermediate level courses, my knowledge was taken one step further with HTML5 and CSS.</p>
+                                    <p><strong>Skills:</strong> HTML5 · CSS3 · JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Git & GitHub Training</h5>
+                                    <p class="card-subtitle mt-3">Techcareer.net · March 2025</p>
+                                    <p class="mt-3">In this course, I learned the basics of Git and GitHub, which are essential for version control in software development.</p>
+                                    <p class="mt-3"><strong>Skills:</strong> Git · GitHub · Git Commands</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Development with HTML5</h5>
+                                    <p class="card-subtitle mt-3">BTK Akademi · February - April 2025</p>
+                                    <p class="mt-3">In this course, I learned the basics of HTML5 and how to use it effectively in web development.</p>
+                                    <p class="mt-3"><strong>Skills:</strong> HTML5 · CSS3 · JavaScript · Bootstrap 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Kart -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">AI4ResilientYouth Program</h5>
+                                    <p class="card-subtitle mt-3">Kodluyoruz · March - April 2025</p>
+                                    <p class="mt-3">In this program, I learned how to use AI tools effectively in my career development and sales processes.</p>
+                                    <p class="mt-3"><strong>Skills:</strong> AI for Career Development · AI Tools · Productive AI for Sales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikalar -->
+                <div class="tab-pane fade" id="certificates" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">101:HTML</h5>
+                                    <p class="card-subtitle mb-2">Turkcell Geleceği Yazanlar · December 2024</p>
+                                    <p><strong>Skills:</strong> HTML </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">201:HTML5 & CSS3</h5>
+                                    <p class="card-subtitle mb-2">Turkcell Geleceği Yazanlar · March 2025</p>
+                                    <p><strong>Skills:</strong> HTML5 · CSS3 · JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Git & GitHub Training</h5>
+                                    <p class="card-subtitle mb-2">Techcareer.net · March 2025</p>
+                                    <p><strong>Skills:</strong> Git · GitHub · Git Commands</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web Development with HTML5</h5>
+                                    <p class="card-subtitle mb-2">BTK Akademi · April 2025</p>
+                                    <p><strong>Skills:</strong> HTML5 · CSS3 · JavaScript · Bootstrap 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card bg-dark text-light border-0 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">AI4ResilientYouth Program Participation Certificate</h5>
+                                    <p class="card-subtitle mb-2">Kodluyoruz · April 2025</p>
+                                    <p><strong>Skills:</strong> AI for Career Development · AI Tools · Productive AI for Sales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- tab-content sonu -->
+        </section>
+        <!-- Kurslar & Sertifikalar Bölümü Bitiş -->
+
+        <!--Beceriler-->
+        <section id="beceriler" class="container">
+        <h2 class="mb-4 text-center"><i class="bi bi-tools me-2"></i>Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+            <h5 class="text-uppercase mb-3">Technıcal Skılls</h5>
+            <ul class="list-unstyled">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap 5</li>
+                <li>Tailwind</li>
+                <li>UI/UX Design</li>
+                <li>Office Applications</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Git & GitHub</li>
+            </ul>
+            </div>
+            <div class="col-md-6">
+            <h5 class="text-uppercase mb-3">Soft Skılls</h5>
+            <ul class="list-unstyled">
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Analyzing</li>
+                <li>Creativity</li>
+                <li>Willingness to Learn</li>
+                <li>Documentation</li>
+                <li>Feedback</li>
+                <li>Self-motivation</li>
+                <li>Time Management</li>
+            </ul>
+            </div>
+        </div>
+        </section>
+        <!--Beceriler Bitiş-->
+
+        <!--Footer Başlangıç-->
+        <footer class="text-center">
+            <div class="container">
+                <p>&copy; 2025 Berat Yurt. All rights reserved.</p>
+            </div>
+        </footer>
+        <!--Footer Bitiş-->
+
+        <!--Bootstrap JS ve bağımlılıkları-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>
